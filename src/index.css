@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@theme {
+  --font-sans: "Tajawal", system-ui, sans-serif;
+  --color-paper:#faf8f4; --color-card:#f1eee8; --color-line:#e2ded5; --color-ink:#2b2d2f; --color-mute:#6b6f73;
+  --color-brand:#4a6b57; --color-brand-dark:#3b5746; --color-brand-soft:#e3ebe5;
+  --color-warn:#d9822b; --color-warn-soft:#fbeedd; --color-bad:#c0392b; --color-bad-soft:#f8e2df;
+  --color-info:#50697a; --color-info-soft:#e6ecf0;
+}
+html,body,#root{height:100%}
+body{background:#faf8f4;color:#2b2d2f;font-family:"Tajawal",system-ui,sans-serif;-webkit-tap-highlight-color:transparent}
+button{cursor:pointer;font-family:inherit}
+input,select,textarea{font-family:inherit}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.fade-up{animation:fadeUp .25s ease-out}
+@keyframes drive{0%{transform:translateX(8px)}50%{transform:translateX(-8px)}100%{transform:translateX(8px)}}
+.drive{animation:drive 2.4s ease-in-out infinite}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(74,107,87,.45)}100%{box-shadow:0 0 0 12px rgba(74,107,87,0)}}
+.ring{animation:ring 1.6s ease-out infinite}
+::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background:#d6d1c6;border-radius:8px}
